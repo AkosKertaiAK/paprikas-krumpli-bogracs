@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    box-shadow: 0 0 500px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:0 0 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.paprikáskrumpli{
+    width: 300px;
+}
+
+img{
+    width: 275px;
+    float: right;
+    border-radius: 10px;
+}
+
+.img2{
+    width: 600px;
+    align-content: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
