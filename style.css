@@ -13,6 +13,9 @@ header {
     font-size: 30px;
     font-weight: bolder;
     box-shadow: 0 0 500px rgba(0, 0, 0, 0.1);
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container {
@@ -22,36 +25,93 @@ header {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow:0 0 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-in-out;
     background: rgba(255, 255, 255, 0.9);
 }
 
 ul, ol {
     padding-left: 20px;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 h1 {
     text-align: center;
     padding: 20px;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
-.paprikáskrumpli{
-    width: 300px;
+h2, h3, h4, p, label{
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
-img{
-    width: 275px;
-    float: right;
+
+.paprikaskrumpli {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    max-width: 275px;
     border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    float: right;
 }
 
-.img2{
-    width: 600px;
-    align-content: center;
+.img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* Reszponzív dizájn */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    header {
+        font-size: 24px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 22px;
+        padding: 10px;
+    }
+    
+    img {
+        max-width: 100%;
+    }
 }
